@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/calculator.css" />
+  </head>
+  <body>
+    <div class="btn">
+      <input type="text" id="inputValue">
+      <div class="btn-keys">
+        <div> 
+          <button class="operator-btn2"onclick="clearAll ()">AC</button>
+          <button class="operator-btn2" onclick="btnDisplay('÷')">÷</button>
+          <button class="operator-btn2" onclick="btnDisplay('%')">%</button>
+          <button class="operator-btn" onclick="del ()">CE</button>
+        </div>
+        <div>
+            <button onclick="btnDisplay('7')">7</button>
+          <button onclick="btnDisplay('8')">8</button>
+          <button onclick="btnDisplay('9')">9</button>
+          <button class="operator-btn" onclick="btnDisplay('*')">x</button>
+        </div>
+        <div>
+          <button onclick="btnDisplay('4')">4</button>
+          <button onclick="btnDisplay('5')">5</button>
+          <button onclick="btnDisplay('6')">6</button>
+          <button class="operator-btn" onclick="btnDisplay('-')">-</button>
+        </div>
+        <div>
+          <button onclick="btnDisplay('1')">1</button>
+          <button onclick="btnDisplay('2')">2</button>
+          <button onclick="btnDisplay('3')">3</button>
+          <button  class="operator-btn" onclick="btnDisplay('+')">+</button>
+        </div>
+        <div>
+          <button class="zero-btn" onclick="btnDisplay('0')">0</button>
+          <button onclick="btnDisplay('.')">.</button>
+          <button class="operator-btn" onclick="equalTo ()">=</button>
+         
+        </div>
+      </div>
+    </div>
+    <script src="/calculator.js"></script>
+  </body>
